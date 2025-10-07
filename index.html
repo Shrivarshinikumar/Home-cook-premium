@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeCook Premium</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">✨ HomeCook</div>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="#chef">Chef Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Delicious Home-Cooked Meals, Delivered to You</h1>
+            <p>Fresh, healthy, and gourmet dishes from local chefs.</p>
+            <button onclick="scrollToMenu()">Order Now</button>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <h2>Today's Specials</h2>
+        <div class="menu-items" id="menuItems">
+            <!-- Menu items will load here -->
+        </div>
+    </section>
+
+    <section id="cart" class="cart-section">
+        <h2>Your Cart</h2>
+        <div id="cartItems" class="cart-items">Your cart is empty.</div>
+        <div class="cart-total">
+            <strong>Total:</strong> $<span id="total">0</span>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </section>
+
+    <section id="chef" class="chef-section">
+        <h2>Chef Dashboard</h2>
+        <form id="chefForm">
+            <input type="text" id="dishName" placeholder="Dish Name" required>
+            <input type="number" id="dishPrice" placeholder="Price ($)" required>
+            <input type="text" id="dishImage" placeholder="Image URL" required>
+            <button type="submit">Add Dish</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 HomeCook Premium. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
